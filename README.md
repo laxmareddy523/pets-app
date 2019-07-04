@@ -6,7 +6,7 @@
 
 	2.1 install the node js software
 
-	2.2 npx create-react-app pets-app
+	2.2 npx create-react-app pets-app or npm init react-app pets-app
 
 	2.3 cd pets-app
 
