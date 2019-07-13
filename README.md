@@ -1,10 +1,10 @@
-# Pet shop test
+# Pet shop Apllication ReactJS
 
 This is the app architecture that present the preparation when we start a project. This information will help all developers understand the overall concept and start building a highly scalable product.
 
 # Steps to build the project
 
-1.  Created mock API for testing the application
+1. Created mock API for testing the application
 
 1.1 http://5d1b2429dd81710014e883b4.mockapi.io/owners
 
