@@ -1,26 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
+
+import { 
+  withLayout
+} from 'components/common';
+import Homepage from 'pages/Homepage';
+import PetStore from 'stores';
 import './App.css';
 
+
 function App() {
+  const petStore = PetStore.create({state: 'initial'});
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container pt-5 pb-3">
+      <h3 className="mb-4">Pet's Shop</h3>
+      <hr />
+      <Homepage componentStore={petStore} />
     </div>
   );
 }
 
-export default App;
+export default withLayout(App);
